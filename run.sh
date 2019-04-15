@@ -14,6 +14,6 @@ do
     filename=$dir_name"/"$filename
     echo $fullname
     echo $filename
-    command `gcc $filename -o $fullname`
+    command `gcc $filename -o $fullname`-std=c11
 done
 
