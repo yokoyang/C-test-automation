@@ -7,13 +7,13 @@ files=$(ls $dir_name)
 echo $files
 for filename in $files
 do
-    echo $filename
+#    echo $filename
     name=`echo $filename | cut -d \. -f 1`
-    echo $name
+#    echo $name
     fullname=$target_dir_name"/"$name
     filename=$dir_name"/"$filename
     echo $fullname
     echo $filename
-    command `gcc $filename -o $fullname`
+    command `gcc $filename -o $fullname -Wall`
 done
 
