@@ -1,7 +1,7 @@
 #!/bin/bash
 
-dir_name="./C"
-target_dir_name="./OUT"
+dir_name="./data/C"
+target_dir_name="./data/OUT"
 
 files=$(ls $dir_name)
 echo $files
