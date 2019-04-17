@@ -16,7 +16,8 @@ if __name__ == '__main__':
         print(i, j, k)
         if "main.c" in k:
             counter += 1
-            target_file_path = str(Path(destination_file_dir) / Path(i)._cparts[-1]) + ".cpp"
+            target_file_path = str(Path(destination_file_dir) / Path(i)._cparts[-1]) + ".c"
+            target_file_path = "".join(str(target_file_path).split())
             shutil.copyfile(str(Path(i) / "main.c"), target_file_path)
         else:
             print("a")
